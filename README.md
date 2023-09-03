@@ -8,7 +8,6 @@ Welcome to the **R3D H4T** repository! This repository is dedicated to my ongoin
 - [Projects](#projects)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## About
 
@@ -20,15 +19,17 @@ Feel free to explore the projects, provide feedback, or contribute if you're int
 
 Here are some of the ongoing projects you can find in this repository:
 
-1. **Basic  Message Server**
-This project provides basic examples of TCP and UDP server implementations using Python's built-in socket library. The TCP server listens for incoming connections and receives messages, while the UDP server listens for incoming datagrams (client messages).
+1. **Basic  Message Server**:
+   
+    This project provides basic examples of TCP and UDP server implementations using Python's built-in socket library. The TCP server listens for incoming connections and receives messages, while the UDP server listens for incoming datagrams (client messages).
 
-### Status: *Completed*
+**Status: *Completed***
 
-3. **SSL Commander**
-SSL Commander is a Python-based server-client communication tool that provides secure and encrypted communication over SSL-encrypted sockets.          This tool allows you to send commands from a client to a server securely and receive responses while ensuring the confidentiality and integrity of the data         transferred.
+2. **SSL Commander**:
 
-### Status: *Completed*
+    SSL Commander is a Python-based server-client communication tool that provides secure and encrypted communication over SSL-encrypted sockets.          This tool allows you to send commands from a client to a server securely and receive responses while ensuring the confidentiality and integrity of the data         transferred.
+
+**Status: *Completed***
 
 ## Usage
 
