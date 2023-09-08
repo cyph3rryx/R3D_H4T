@@ -31,6 +31,9 @@ Here are some of the ongoing projects you can find in this repository:
 
 **Status: *Completed***
 
+3. **Morse Code Generator**:
+
+   
 ## Usage
 
 To make the best use of this repository:
