@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Install TCPDump
-echo "Installing TCPDump..."
-sudo apt install tcpdump
-
 # Ask the user for the duration of the network capture
 read -p "Enter the duration (in seconds) for the network capture (default is 10 seconds): " duration
 duration=${duration:-10}
@@ -24,14 +20,15 @@ if [ -z "$interfaces" ]
 then
   interfaces=$(sudo tcpdump -D | awk -F. '{print \$2}')
 fi
+dir=$(pwd)
 for interface in $interfaces
 do
   echo "Capturing traffic on $interface..."
   if [ -z "$packet_type" ]
   then
-    sudo tcpdump -i $interface -w capture_$interface.pcap &
+    sudo tcpdump -i $interface -w "$dir/capture_$interface.pcap" &
   else
-    sudo tcpdump -i $interface $packet_type -w capture_$interface.pcap &
+    sudo tcpdump -i $interface $packet_type -w "$dir/capture_$interface.pcap" &
   fi
 done
 
@@ -48,5 +45,5 @@ echo "Analyzing captured traffic..."
 for interface in $interfaces
 do
   echo "Analyzing traffic on $interface..."
-  sudo tcpdump -r capture_$interface.pcap
+  sudo tcpdump -r "$dir/capture_$interface.pcap"
 done
