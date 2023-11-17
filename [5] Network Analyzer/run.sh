@@ -2,7 +2,7 @@
 
 # Install TCPDump
 echo "Installing TCPDump..."
-sudo apt update && sudo apt install tcpdump
+sudo apt install tcpdump
 
 # Ask the user for the duration of the network capture
 read -p "Enter the duration (in seconds) for the network capture (default is 10 seconds): " duration
