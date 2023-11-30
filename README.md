@@ -43,6 +43,12 @@ Here are some of the ongoing projects you can find in this repository:
 
 **Status: *Completed***
 
+5. **NetSlash**:
+
+   Net Slash is a Bash script designed to capture network traffic using TCPDump, a command-line packet analyzer. This script prompts the user for various parameters, allowing customization of the network capture. The captured traffic is saved to pcap files for later analysis.
+
+**Status: *Completed***
+
 ## Usage
 
 To make the best use of this repository:
