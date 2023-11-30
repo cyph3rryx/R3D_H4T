@@ -37,6 +37,12 @@ Here are some of the ongoing projects you can find in this repository:
 
 **Status: *Completed***
 
+4. **SSH Bruteforcer**:
+
+   SSH Bruteforcer is a Python script that attempts to perform SSH password cracking on a target SSH server using a list of potential passwords. It uses the Paramiko library for SSH connections and provides a simple command-line interface for users to specify the target IP address, SSH username, and password file.
+
+**Status: *Completed***
+
 ## Usage
 
 To make the best use of this repository:
