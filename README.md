@@ -33,7 +33,10 @@ Here are some of the ongoing projects you can find in this repository:
 
 3. **Morse Code Generator**:
 
-   
+   This Python script allows you to input and convert text into Morse code. It provides both text and audio representations of Morse code. It converts text into Morse code, generates Morse code audio for each character, plays the Morse code audio & allows you to save the Morse code as text and audio files.
+
+**Status: *Completed***
+
 ## Usage
 
 To make the best use of this repository:
