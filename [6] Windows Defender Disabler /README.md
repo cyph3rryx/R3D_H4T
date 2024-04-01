@@ -9,7 +9,7 @@ This project provides a Python script to disable Windows Defender on a Windows m
 ```bash
 pip install winreg
 ```
-1. Download the script and save it as `WindowsDefenderDisabler.py`
+3. Download the script and save it as `KillingTheSlayer.py`
 
 ## Usage
 
@@ -17,9 +17,14 @@ pip install winreg
 2. Navigate to the directory where the script is saved
 3. Run the script:
 ```bash
-python WindowsDefenderDisabler.py
+python KillingTheSlayer.py
 ```
-1. The script will print a message informing you that Windows Defender has been disabled and that you should restart your computer for the changes to take effect.
+The script will print a message informing you that Windows Defender has been disabled and that you should restart your computer for the changes to take effect.
+
+To Enable the Defender, run the script named `AwakenTheSlayer.py`
+```bash
+python AwakenTheSlayer.py
+```
 
 ## Contributing
 
