@@ -25,15 +25,15 @@ def modify_defender_settings():
             _winreg.SetValueEx(new_key, "DisableIOAVProtection", 0, _winreg.REG_DWORD, 1)
             _winreg.CloseKey(key)
             _winreg.CloseKey(new_key)
-            print("Windows Defender has been disabled.")
-            print("Please restart your computer to take effect.")
+            print("The Slayer has been defeated!!!")
+            print("Just Re-start the system to give him a proper burial!")
             getchar()
             return 0
         else:
-            print("Could not open the key. Make sure you have the correct permissions.")
+            print("This is a Purple Gate and you have to get the key to open it! Be the freakin' admin to get the key!")
             return
     else:
-        print("Please run this script as an administrator.")
+        print("Human??? Become the admin first then run the code!")
         return -1
 
 if __name__ == '__main__':
