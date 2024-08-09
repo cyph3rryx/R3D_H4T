@@ -16,17 +16,7 @@ def modify_defender_settings():
     if is_user_admin():
         key = _winreg.OpenKey(_winreg.HKEY_LOCAL_MACHINE, r'SOFTWARE\Policies\Microsoft\Windows Defender', 0, _winreg.KEY_ALL_ACCESS)
         if key:
-            _winreg.SetValueEx(key, "DisableAntiSpyware", 0, _winreg.REG_DWORD, 1)
-            new_key = _winreg.CreateKey(key, "Real-Time Protection")
-            _winreg.SetValueEx(new_key, "DisableRealtimeMonitoring", 0, _winreg.REG_DWORD, 1)
-            _winreg.SetValueEx(new_key, "DisableBehaviorMonitoring", 0, _winreg.REG_DWORD, 1)
-            _winreg.SetValueEx(new_key, "DisableScanOnRealtimeEnable", 0, _winreg.REG_DWORD, 1)
-            _winreg.SetValueEx(new_key, "DisableOnAccessProtection", 0, _winreg.REG_DWORD, 1)
-            _winreg.SetValueEx(new_key, "DisableIOAVProtection", 0, _winreg.REG_DWORD, 1)
-            _winreg.CloseKey(key)
-            _winreg.CloseKey(new_key)
-            print("The Slayer has been defeated!!!")
-            print("Just Re-start the system to give him a proper burial!")
+            
             getchar()
             return 0
         else:
